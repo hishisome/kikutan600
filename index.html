@@ -8,27 +8,33 @@
   </head>
 
   <body>
-    <div id="titleText">キクタン600 単語テスト</div>
-    <div id="mondaiSet">
-      <input id="startDay" type="number" value="1" min=1>
-      <div class="ward">日目～</div>
-      <input id="endDay" type="number" value="2" min=1>
-      <div class="ward">日目</div>
-    </div>
-
-    <div id="numberOfMondai">  
-      <input id="howMany" type="number" value="16" min=1>
-      <div class="ward">問出題</div>
-      <div id="amount">(1~16問まで)</div>
-    </div>
-
-    <button id="create">問題作成</button>
-    <button id="next">解答表示</button>
-
-    <div id="question">問1</div>
-    <div id="contents"> </div>
-    <div id="day"> </div>
+    <div id="mondaiserect">
+        <div id="titleText">キクタン600 単語テスト</div>
+        <div id="mondaiSet">
+          <input id="startDay" type="number" value="1" min=1>
+          <div class="ward">日目～</div>
+          <input id="endDay" type="number" value="2" min=1>
+          <div class="ward">日目</div>
+        </div>
     
+        <div id="numberOfMondai">  
+          <input id="howMany" type="number" value="16" min=1>
+          <div class="ward">問出題</div>
+          <div id="amount">(1~32問まで)</div>
+        </div>
+    </div>
+
+    <div id="buttondiv">
+      <button id="create">問題作成</button>
+      <button id="next">解答表示</button>
+    </div>
+
+    <div id="mondaidiv">
+        <div id="question">問1</div>
+        <div id="contents"> </div>
+        <div id="day"> </div>
+    </div>
+
     <script src="mondai.js"></script>
 
   </body>
