@@ -3,7 +3,7 @@
 }
 
 #titleText{
-    font-size:60px;
+    font-size:70px;
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     position:relative;
     padding:5px;
@@ -70,12 +70,12 @@
 
 input{
     width:120px;
-    font-size:60px;
+    font-size:70px;
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 div{
-    font-size:60px;
+    font-size:70px;
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
@@ -92,7 +92,7 @@ div{
     margin:20px;
 }
 button {
-    font-size:60px;
+    font-size:70px;
     display: inline-block;
     padding: 15px 30px;
     text-decoration: none;
