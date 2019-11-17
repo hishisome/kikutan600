@@ -99,10 +99,10 @@ create.addEventListener('click', function() {
 next.addEventListener('click', function() {
   var text = document.getElementById('next').textContent;
   if(text === "解答表示"){
-    next.innerHTML=("次の問題へ");
+    next.innerHTML=("次の問題");
     contents.innerHTML=(mondai[cnt][2]);
     day.innerHTML=(`day${mondai[cnt][3]},No.${mondai[cnt][4]}`);
-  }else if(text === "次の問題へ"){
+  }else if(text === "次の問題"){
     if(cnt < ques - 1){
       next.innerHTML=("解答表示");
       cnt++;
