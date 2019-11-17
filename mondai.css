@@ -1,16 +1,16 @@
-.ward {
+.ward,#amount {
     display: inline-block;
 }
 
 #titleText{
-    font-size:40px;
+    font-size:60px;
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     position:relative;
     padding:5px;
     text-align:center;
-    color:#ffe8e8;
+    color:white;
     margin-bottom:10px;
-    background:#4169e1;
+    background:#6dcdf3;
     box-shadow:0 1px 2px 0 rgba(0,0,0,0.2);
     background-image: -webkit-gradient(linear, left top, left bottom,
     from( rgba(0, 0, 0, 0.0)),
@@ -66,3 +66,43 @@
     border-color:transparent;
     border-bottom-color:#c66;
 }
+
+input{
+    width:120px;
+    font-size:60px;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+div{
+    font-size:60px;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#day{
+    font-size:40px;
+}
+
+#mondaiserect,#buttondiv,#mondaidiv{
+    width:1000px;
+    text-align: center;
+}
+
+#create,#next{
+    margin:20px;
+}
+button {
+    font-size:60px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  }
+  
+  button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+  }
