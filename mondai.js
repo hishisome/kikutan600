@@ -5,6 +5,7 @@ var endDay = document.getElementById('endDay');
 var amount = document.getElementById('amount');
 var create = document.getElementById('create');
 var contents = document.getElementById('contents');
+var type = document.getElementById('type');
 var next = document.getElementById('next');
 var question = document.getElementById('question');
 var howMany = document.getElementById('howMany');
@@ -46,14 +47,14 @@ var start = 1;
 var end = 2;
 
 //日目をクリックすると(内の注釈が変わる)
-startDay.addEventListener('click', function() {
+startDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
   amount.innerHTML=`(1~${howManyQues}問まで)`;
 }, false);
 
-endDay.addEventListener('click', function() {
+endDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
@@ -91,7 +92,8 @@ create.addEventListener('click', function() {
   }
   question.innerHTML=("問1");
   next.innerHTML=("解答表示");
-  contents.innerHTML=(`${mondai[0][0]}:${mondai[0][1]}`);
+  type.innerHTML=(mondai[0][0])
+  contents.innerHTML=(mondai[0][1]);
   day.innerHTML=(" ");
 }, false);
 
@@ -106,7 +108,8 @@ next.addEventListener('click', function() {
     if(cnt < ques - 1){
       next.innerHTML=("解答表示");
       cnt++;
-      contents.innerHTML=(`${mondai[cnt][0]}:${mondai[cnt][1]}`);
+      type.innerHTML=(mondai[cnt][0])
+      contents.innerHTML=(mondai[cnt][1]);
       question.innerHTML=(`問${cnt+1}`);
       day.innerHTML=(" ");
     }else{
