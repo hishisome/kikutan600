@@ -1,0 +1,68 @@
+.ward {
+    display: inline-block;
+}
+
+#titleText{
+    font-size:40px;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    position:relative;
+    padding:5px;
+    text-align:center;
+    color:#ffe8e8;
+    margin-bottom:10px;
+    background:#4169e1;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom,
+    from( rgba(0, 0, 0, 0.0)),
+    color-stop(0.08, rgba(255, 255, 255, 0.5)),
+    color-stop(0.12, rgba(255, 255, 255, 0.5)),
+    color-stop(0.12, rgba(0, 0, 0, 0.0)),
+    color-stop(0.88, rgba(0, 0, 0, 0.0)),
+    color-stop(0.88, rgba(255, 255, 255, 0.5)),
+    color-stop(0.92, rgba(255, 255, 255, 0.5)),
+    color-stop(0.92, rgba(0, 0, 0, 0.0)),
+    to( rgba(0, 0, 0, 0.0))
+    );
+    background-image: -moz-linear-gradient(top,
+    transparent 8%,
+    rgba(255, 255, 255, 0.5) 8%,
+    rgba(255, 255, 255, 0.5) 12%,
+    transparent 12%,
+    transparent 88%,
+    rgba(255, 255, 255, 0.5) 88%,
+    rgba(255, 255, 255, 0.5) 92%,
+    transparent 92%
+    );
+    background-image: -o-linear-gradient(top,
+    transparent 8%,
+    rgba(255, 255, 255, 0.5) 8%,
+    rgba(255, 255, 255, 0.5) 12%,
+    transparent 12%,
+    transparent 88%,
+    rgba(255, 255, 255, 0.5) 88%,
+    rgba(255, 255, 255, 0.5) 92%,
+    transparent 92%
+    );
+    background-image: linear-gradient(to bottom,
+    transparent 8%,
+    rgba(255, 255, 255, 0.5) 8%,
+    rgba(255, 255, 255, 0.5) 12%,
+    transparent 12%,
+    transparent 88%,
+    rgba(255, 255, 255, 0.5) 88%,
+    rgba(255, 255, 255, 0.5) 92%,
+    transparent 92%
+    );
+    }
+    .mawarikomi:before{
+    content:" ";
+    position:absolute;
+    top:-5px;
+    left:0;
+    width:0;
+    height:0;
+    border-width:0 0 5px 10px;
+    border-style:solid;
+    border-color:transparent;
+    border-bottom-color:#c66;
+}
