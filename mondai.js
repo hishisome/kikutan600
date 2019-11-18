@@ -51,18 +51,30 @@ startDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
-  amount.innerHTML=`(1~${howManyQues}問まで)`;
+  if(start > end){
+    amount.innerHTML="(日数エラー)"
+    document.getElementById('howMany').value = 0;
+  }else{
+    amount.innerHTML=`(1~${howManyQues}問まで)`
+    document.getElementById('howMany').value = howManyQues;
+  }
 }, false);
 
 endDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
-  amount.innerHTML=`(1~${howManyQues}問まで)`;
+  if(start > end){
+    amount.innerHTML="(日数エラー)"
+    document.getElementById('howMany').value = 0;
+  }else{
+    amount.innerHTML=`(1~${howManyQues}問まで)`;
+    document.getElementById('howMany').value = howManyQues;
+  }
 }, false);
 
 //出題数を変更
-howMany.addEventListener('click', function() {
+howMany.addEventListener('change', function() {
   var amount = document.getElementById('howMany').value;
   ques = amount;
 }, false);
@@ -103,7 +115,7 @@ next.addEventListener('click', function() {
   if(text === "解答表示"){
     next.innerHTML=("次の問題");
     contents.innerHTML=(mondai[cnt][2]);
-    day.innerHTML=(`day${mondai[cnt][3]},No.${mondai[cnt][4]}`);
+    day.innerHTML=(`day${mondai[cnt][3]}, No.${mondai[cnt][4]}, ${mondai[cnt][1]}`);
   }else if(text === "次の問題"){
     if(cnt < ques - 1){
       next.innerHTML=("解答表示");
