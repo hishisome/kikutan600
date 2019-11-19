@@ -862,22 +862,22 @@
 ｲﾃﾞｨｵﾑ,hate doing,～することを嫌う,54,862
 ｲﾃﾞｨｵﾑ,deny doing,～しなかったと言う,54,863
 ｲﾃﾞｨｵﾑ,suggest doing,～しようと提案する,54,864
-ｲﾃﾞｨｵﾑ,permit A to do,Aに～することを許す,55,865
-ｲﾃﾞｨｵﾑ,encourage A to do,Aに～するよう励ます,55,866
-ｲﾃﾞｨｵﾑ,invite A to do,Aに～するように勧める,55,867
-ｲﾃﾞｨｵﾑ,instruct A to do,Aに～するように指示する,55,868
-ｲﾃﾞｨｵﾑ,persuade A to do,Aを説得して～させる,55,869
-ｲﾃﾞｨｵﾑ,urge A to do,Aに～するよう催促する,55,870
-ｲﾃﾞｨｵﾑ,warn A to do,Aに～するように警告する,55,871
-ｲﾃﾞｨｵﾑ,allow A to do,Aに～することを許す,55,872
-ｲﾃﾞｨｵﾑ,convince A to do,Aに～するよう説得する,55,873
-ｲﾃﾞｨｵﾑ,enable A to do,Aに～できるようにする,55,874
-ｲﾃﾞｨｵﾑ,request A to do,Aに～するように申請する,55,875
-ｲﾃﾞｨｵﾑ,force A to do,Aに～することを強制する,55,876
-ｲﾃﾞｨｵﾑ,ban A from doing,Aが～するのを禁止する,55,877
-ｲﾃﾞｨｵﾑ,discourage A from doing,Aに～するのをやめさせる,55,878
-ｲﾃﾞｨｵﾑ,prohibit A from doing,Aが～するのを禁止する,55,879
-ｲﾃﾞｨｵﾑ,prevent A from doing,Aが～するのを妨げる,55,880
+ｲﾃﾞｨｵﾑ,permit 人 to do,人に～することを許す,55,865
+ｲﾃﾞｨｵﾑ,encourage 人 to do,人に～するよう励ます,55,866
+ｲﾃﾞｨｵﾑ,invite 人 to do,人に～するように勧める,55,867
+ｲﾃﾞｨｵﾑ,instruct 人 to do,人に～するように指示する,55,868
+ｲﾃﾞｨｵﾑ,persuade 人 to do,人を説得して～させる,55,869
+ｲﾃﾞｨｵﾑ,urge 人 to do,人に～するよう催促する,55,870
+ｲﾃﾞｨｵﾑ,warn 人 to do,人に～するように警告する,55,871
+ｲﾃﾞｨｵﾑ,allow 人 to do,人に～することを許す,55,872
+ｲﾃﾞｨｵﾑ,convince 人 to do,人に～するよう説得する,55,873
+ｲﾃﾞｨｵﾑ,enable 人 to do,人に～できるようにする,55,874
+ｲﾃﾞｨｵﾑ,request 人 to do,人に～するように申請する,55,875
+ｲﾃﾞｨｵﾑ,force 人 to do,人に～することを強制する,55,876
+ｲﾃﾞｨｵﾑ,ban 人 from doing,人が～するのを禁止する,55,877
+ｲﾃﾞｨｵﾑ,discourage 人 from doing,人に～するのをやめさせる,55,878
+ｲﾃﾞｨｵﾑ,prohibit 人 from doing,人が～するのを禁止する,55,879
+ｲﾃﾞｨｵﾑ,prevent 人 from doing,人が～するのを妨げる,55,880
 ｲﾃﾞｨｵﾑ,be impressed by,～に感動している,56,881
 ｲﾃﾞｨｵﾑ,be subject to,～に左右される,56,882
 ｲﾃﾞｨｵﾑ,be capable of,～の能力がある,56,883
@@ -934,8 +934,8 @@
 ｲﾃﾞｨｵﾑ,be sure to do,きっと～する,59,934
 ｲﾃﾞｨｵﾑ,be qualified to do,～する資格がある,59,935
 ｲﾃﾞｨｵﾑ,be able to do,～することができる,59,936
-ｲﾃﾞｨｵﾑ,be prepared to do,～する用意ができている,59,937
-ｲﾃﾞｨｵﾑ,be ready to do,～する用意ができている,59,938
+ｲﾃﾞｨｵﾑ,be prepared to do,～する覚悟(用意)ができている,59,937
+ｲﾃﾞｨｵﾑ,be ready to do,～する用意(準備)ができている,59,938
 ｲﾃﾞｨｵﾑ,be scheduled to do,～する予定である,59,939
 ｲﾃﾞｨｵﾑ,be delighted to do,～して喜んでいる,59,940
 ｲﾃﾞｨｵﾑ,be willing to do,快く～する,59,941
