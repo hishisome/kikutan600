@@ -37,7 +37,7 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 var cnt = 0;
 
 //問題数用に変数quesを定義
-var ques = 16;
+var ques = 32;
 
 //出題用の配列mondaiを定義
 var mondai = [];
@@ -51,6 +51,7 @@ startDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
+  ques = howManyQues;
   if(start > end){
     amount.innerHTML="(日数エラー)"
     document.getElementById('howMany').value = 0;
@@ -64,6 +65,7 @@ endDay.addEventListener('change', function() {
   start = document.getElementById('startDay').value;
   end = document.getElementById('endDay').value;
   let howManyQues = (end - start) * 16 + 16;
+  ques = howManyQues;
   if(start > end){
     amount.innerHTML="(日数エラー)"
     document.getElementById('howMany').value = 0;
@@ -126,6 +128,7 @@ next.addEventListener('click', function() {
       day.innerHTML=(" ");
     }else{
       question.innerHTML=("終了");
+      type.innerHTML=(" ");
       contents.innerHTML=(" ");
       day.innerHTML=(" ");
     }
