@@ -81,34 +81,54 @@ howMany.addEventListener('change', function() {
   ques = amount;
 }, false);
 
-//問題作成をクリックすると問題が作成される
+//問題作成をクリックすると問題が作成される, もし問題出題中なら戻るボタンになる
 create.addEventListener('click', function() {
-  cnt = 0;
-  mondai = []; //一度問題を空にする
-  var list = [];
-  x = 0;
-  //〇日目～〇日目までにcsvリストをカットする
-  var startWard = (start - 1)*16 + 1;
-  var endWard = end*16;
-
-  for(i = startWard - 1; i < endWard; i++){
-    list[x] = mondaiList[i];
-    x++;
+  var text = document.getElementById('create').textContent;
+  if(text === "問題作成"){
+    cnt = 0;
+    mondai = []; //一度問題を空にする
+    var list = [];
+    x = 0;
+    //〇日目～〇日目までにcsvリストをカットする
+    var startWard = (start - 1)*16 + 1;
+    var endWard = end*16;
+  
+    for(i = startWard - 1; i < endWard; i++){
+      list[x] = mondaiList[i];
+      x++;
+    }
+    for(i = list.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = list[i];
+      list[i] = list[j];
+      list[j] = tmp;
+    }
+    for(i = 0; i < ques; i++) {
+      mondai[i] = list[i]
+    }
+    create.innerHTML=("１問戻る");
+    question.innerHTML=("問1");
+    next.innerHTML=("解答表示");
+    type.innerHTML=(mondai[0][0])
+    contents.innerHTML=(mondai[0][1]);
+    day.innerHTML=(" ");
+  }else{
+    if(document.getElementById('question').textContent === "問1" && document.getElementById('next').textContent === "解答表示"){
+    }else{
+      if(document.getElementById('next').textContent === "解答表示"){
+        cnt--;
+        next.innerHTML=("次の問題")
+        contents.innerHTML=(mondai[cnt][2]);
+        day.innerHTML=(`day${mondai[cnt][3]}, No.${mondai[cnt][4]}, ${mondai[cnt][1]}`); 
+        }else{
+          next.innerHTML=("解答表示");
+          type.innerHTML=(mondai[cnt][0])
+          contents.innerHTML=(mondai[cnt][1]);
+          question.innerHTML=(`問${cnt+1}`);
+          day.innerHTML=(" ");
+        }
+    }  
   }
-  for(i = list.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var tmp = list[i];
-    list[i] = list[j];
-    list[j] = tmp;
-  }
-  for(i = 0; i < ques; i++) {
-    mondai[i] = list[i]
-  }
-  question.innerHTML=("問1");
-  next.innerHTML=("解答表示");
-  type.innerHTML=(mondai[0][0])
-  contents.innerHTML=(mondai[0][1]);
-  day.innerHTML=(" ");
 }, false);
 
 //解答表示⇔次の問題へ
@@ -127,6 +147,7 @@ next.addEventListener('click', function() {
       question.innerHTML=(`問${cnt+1}`);
       day.innerHTML=(" ");
     }else{
+      create.innerHTML=("問題作成");
       question.innerHTML=("終了");
       type.innerHTML=(" ");
       contents.innerHTML=(" ");
